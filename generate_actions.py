@@ -23,7 +23,7 @@ def generate(N, fn):
             # make sure every purchase has an addtocart and view
             # make sure every addtocart has a view
             a = random.randint(1, 3)
-            for j in xrange(a):
+            for j in range(a):
                 action = ACTIONS[j]
                 f.write("%s,%s,%s,%s\n" % (name, product, action, price))
                 i += 1
